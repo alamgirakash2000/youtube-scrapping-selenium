@@ -39,10 +39,11 @@ def parseVideo(video):
     }
 
 def sendEmail(body):
+  email = input("Enter your Email: ")
+  RECEIVER_EMAIL = email
   
   # Formatting mail
   SENDER_EMAIL ='disposable.mail236@gmail.com'
-  RECEIVER_EMAIL = 'filesharing.akash@gmail.com'
   SENDER_PASSWORD = os.environ['GMAIL_PASS']
   subject= 'Top 10 YouTube trending videos'
   email_text = 'Subject: {}\n\n{}'.format(subject, body) 
